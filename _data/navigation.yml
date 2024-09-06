@@ -1,5 +1,7 @@
 main:
-  - title: "Posts"
+  - title: "Physical Red Team Wiki"
+    url: /wiki/
+  - title: "Blog Posts"
     url: /posts/
   - title: "Categories"
     url: /categories/
