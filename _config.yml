@@ -19,7 +19,7 @@ domain: bryan-wendt.com
 url: https://bryan-wendt.com
 logo: "/assets/images/owl_logo.png"
 
-title: Bryan Wendt - Blog
+title: BW - Blog
 email:
 description: >- # this means to ignore newlines until "baseurl:"
   Bryan Wendt's blog where I post about security knowledge.
@@ -92,7 +92,7 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
+      author_profile: false
       read_time: true
       comments: true
       share: true
@@ -103,7 +103,7 @@ defaults:
       type: pages
     values:
       layout: single
-      author_profile: true
+      author_profile: false
 
 category_archive:
   type: liquid
