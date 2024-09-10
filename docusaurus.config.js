@@ -23,6 +23,7 @@ const config = {
   organizationName: 'bryan-wendt', // Usually your GitHub org/user name.
   projectName: 'bryan-wendt.github.io', // Usually your repo name.
   deploymentBranch: "gh-pages",
+  trailingSlash: false,
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
