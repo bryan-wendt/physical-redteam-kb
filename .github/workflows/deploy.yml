@@ -22,7 +22,6 @@ jobs:
 
       - name: Install dependencies
         run: yarn install --frozen-lockfile
-        working-directory: bryan-wendt.github.io
       - name: Build website
         run: yarn build
 
