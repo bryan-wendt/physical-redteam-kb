@@ -22,6 +22,7 @@ jobs:
 
       - name: Install dependencies
         run: yarn install --frozen-lockfile
+        working-directory: bryan-wendt.github.io
       - name: Build website
         run: yarn build
 
@@ -49,3 +50,7 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+defaults:
+  run:
+    shell: pwsh
