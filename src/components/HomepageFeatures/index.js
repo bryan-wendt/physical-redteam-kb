@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'Red Team Wiki',
-    Svg: require('@site/static/img/encyclopedia.png').default,
+    Svg: require('@site/static/img/docusaurus.png').default,
     description: (
       <>
         Physical Red Team Wiki that covers a large 
