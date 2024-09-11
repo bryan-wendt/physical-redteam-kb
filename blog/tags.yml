@@ -127,3 +127,8 @@ updates:
   label: Updates
   permalink: /updates
   description: Updates
+
+alfred:
+  label: Alfred
+  permalink: /alfred
+  description: Alfred Room

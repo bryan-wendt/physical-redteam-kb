@@ -10,15 +10,15 @@ This is a [TryHackMe][tryhackme] walkthrough for the room: [Steel Mountain][sm].
 # Enumeration
 Start with our friend, nmap: `nmap -T4 -A -p- 10.10.89.192`
 
-![sm1](/static/img/thm/steelmountain/sm1.png)
+![sm1](/img/thm/steelmountain/sm1.png)
 
 We get some good info here. We can see there is a website on port 80, also some other interesting ports. Let’s take a look at port 80 first!
 
-![sm2](/static/img/thm/steelmountain/sm2.webp)
+![sm2](/img/thm/steelmountain/sm2.webp)
 
 Hmm…not much here. Viewing the page source gives us our first answer though!
 
-![sm3](/static/img/thm/steelmountain/sm3.png)
+![sm3](/img/thm/steelmountain/sm3.png)
 
 Let’s take a look at the other webserver (Second answer). For the third answer, take a look at the **Server Information**.
 
@@ -32,7 +32,7 @@ search rejetto 2.3
 use 0
 info
 ```
-![sm4](/static/img/thm/steelmountain/sm4.png)
+![sm4](/img/thm/steelmountain/sm4.png)
 
 This definitely looks like what we are looking for! Now we need to set the options:
 
@@ -57,7 +57,7 @@ type Desktop\user.txt
 ```
 We found our `user.txt` flag!
 
-![sm5](/static/img/thm/steelmountain/sm5.png)
+![sm5](/img/thm/steelmountain/sm5.png)
 
 Next, let’s download the provided PowerShell script: PowerUp
 
@@ -100,7 +100,7 @@ Start the service: `sc start <name of service>`
 
 Go look at your `netcat` terminal and you should have a shell! Find the root flag.
 
-![sm6](/static/img/thm/steelmountain/sm6.png)
+![sm6](/img/thm/steelmountain/sm6.png)
 
 # Manual Exploitation
 Now, we aren’t done with the room, but if this were real-world we have full system access and have complete control of the machine. I like how this room includes a manual exploitation section (good to learn for the OSCP) which is super useful!
@@ -125,7 +125,7 @@ Now open 3 terminal windows:
 
 Edit the exploit to add our machine IP and port
 
-![sm7](/static/img/thm/steelmountain/sm7.png)
+![sm7](/img/thm/steelmountain/sm7.png)
 
 In the Python webserver run: `python3 -m http.server 80`
 
@@ -167,5 +167,5 @@ References
 [sm]: https://tryhackme.com/why-subscribe?roomCode=steelmountain
 [exdb]: https://www.exploit-db.com
 [rejetto]: https://www.exploit-db.com/exploits/39161
-[nc]: https://github.com/andrew-d/static-binaries/blob/master/binaries/windows/x86/ncat.exe
+[nc]: https://github.com/andrew-d-binaries/blob/master/binaries/windows/x86/ncat.exe
 [winpeas]: https://github.com/peass-ng/PEASS-ng/tree/master
