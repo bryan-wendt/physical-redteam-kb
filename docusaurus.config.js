@@ -100,7 +100,7 @@ const config = {
             items: [
               {
                 label: 'Red Team Wiki',
-                to: '/rt-wiki/intro',
+                to: '/docs/intro',
               },
             ],
           },

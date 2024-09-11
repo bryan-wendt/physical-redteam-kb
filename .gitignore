@@ -18,3 +18,9 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+CNAME
+docusaurus.config.js
+package-lock.json
+package.json
+sidebars.js
+yarn.lock
