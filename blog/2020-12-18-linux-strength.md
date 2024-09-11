@@ -20,13 +20,13 @@ Next, let’s ssh into the machine using the given credentials: `ssh topson@<mac
 
 Command: `grep -iRl 'keyword'`
 
-![l1](/src/img/thm/linux-strength/l1.png)
+![l1](/static/img/thm/linux-strength/l1.png)
 
 Command: `less ****-**-**`
 
 Then type: / then keyword then Enter
 
-![l2](/src/img/thm/linux-strength/l2.png)
+![l2](/static/img/thm/linux-strength/l2.png)
 
 Press **Q** to exit the `less` command.
 
@@ -36,7 +36,7 @@ This gives us a clue! Now, let’s find the next file with the `find` command:
 
 `find / -type f -name '<file_name>' 2>/dev/null`
 
-![l3](/src/img/thm/linux-strength/l3.png)
+![l3](/static/img/thm/linux-strength/l3.png)
 
 Once we read that file, it gives us another clue!
 
@@ -46,7 +46,7 @@ Once we read that file, it gives us another clue!
 
 `cd` to that directory and then read the file!
 
-![l4](/src/img/thm/linux-strength/l4.png)
+![l4](/static/img/thm/linux-strength/l4.png)
 
 Alright, now let’s find this file:
 
@@ -56,7 +56,7 @@ Command: `less <file_name>`
 
 Type: `/` then `Flag` then **Enter**. Use **Pg Dn** until you see the highlighted pattern
 
-![l5](/src/img/thm/linux-strength/l5.png)
+![l5](/static/img/thm/linux-strength/l5.png)
 
 # Working with Files
 For the first question, utilize the information in the task.
@@ -79,7 +79,7 @@ Now, let’s find this file:
 
 `find /home/topson -type f -name 'readME_hint.txt'`
 
-![l6](/src/img/thm/linux-strength/l6.png)
+![l6](/static/img/thm/linux-strength/l6.png)
 
 Let’s follow those directions. First, navigate to that directory.
 
@@ -89,14 +89,14 @@ Then, `cd` into that folder. And run the script:
 
 `./-runME.sh`
 
-![l7](/src/img/thm/linux-strength/l7.png)
+![l7](/static/img/thm/linux-strength/l7.png)
 
 # Hashing – Introduction
 Download the file given and then run (on local machine):
 
 `john --format=RAW-MD5 --wordlist=rockyou.txt hash1.txt`
 
-![l9](/src/img/thm/linux-strength/l9.png)
+![l9](/static/img/thm/linux-strength/l9.png)
 
 Now `ssh` into the machine using the given credentials.
 
@@ -133,19 +133,19 @@ Then: `tac data.txt > new_data.txt`
 
 Then run: `john --format=gpg --wordlist=new_data.txt personal.txt.gpg`
 
-![l10](/src/img/thm/linux-strength/l10.png)
+![l10](/static/img/thm/linux-strength/l10.png)
 
 # Reading SQL Databases
 Find the database. Then to access the DB, use: `mysql -u sarah -p` with the supplied password
 
 Find the flag in the DB:
 
-![l11](/src/img/thm/linux-strength/l11.png)
+![l11](/static/img/thm/linux-strength/l11.png)
 
 # Final Challenge
 Find and read the chat logs, starting with `LpnQ`
 
-![l12](/src/img/thm/linux-strength/l12.png)
+![l12](/static/img/thm/linux-strength/l12.png)
 
 Search for any chat log that contains: `sameer`
 
@@ -157,7 +157,7 @@ In the folder: `/home/shared/sql/conf`, look for the configuration file that is 
 
 We get a base64 hash. Decode it and you will find the directory of the backup SQL database.
 
-![l13](/src/img/thm/linux-strength/l13.png)
+![l13](/static/img/thm/linux-strength/l13.png)
 
 Now navigate to that directory, and download it to the local machine, along with the wordlists that start with the given letters.
 
@@ -169,13 +169,13 @@ Unzip the file: `unzip 2020-08-13.zip`
 
 Now, search the `load_employees.dump`: `grep -ia 'james'`
 
-![l14](/src/img/thm/linux-strength/l14.png)
+![l14](/static/img/thm/linux-strength/l14.png)
 
 SSH into the box with the given credentials. Then once logged in, read the root flag!
 
 `sudo cat /root/root.txt`
 
-![l15](/src/img/thm/linux-strength/l15.png)
+![l15](/static/img/thm/linux-strength/l15.png)
 
 # Review
 This room was great to practice some linux command-line! There were a few questions that took a bit to figure out, and I did my best to not just give all the answers so you could actually practice yourself!

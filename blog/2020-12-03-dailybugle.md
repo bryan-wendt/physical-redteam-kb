@@ -10,11 +10,11 @@ This is a walkthrough for the [TryHackMe][thm] room: [Daily Bugle][daily-room]. 
 # Deploy
 Let’s start off with scanning the box! `nmap -sC -sV -oN nmap.txt <machine_ip>`
 
-![d1](/src/img/thm/dailybugle/d1.png)
+![d1](/static/img/thm/dailybugle/d1.png)
 
 It looks like we have a webserver managed by Joomla, with a MySQL DB on the backend. Let’s visit the website!
 
-![d2](/src/img/thm/dailybugle/d2.webp)
+![d2](/static/img/thm/dailybugle/d2.webp)
 
 There is our first answer!
 
@@ -23,7 +23,7 @@ From the nmap scan, we can see that it found some pages. However, before we do t
 
 We will run it with the following command: `perl joomscan.pl -u http://<machine_ip>`
 
-![d3](/src/img/thm/dailybugle/d3.png)
+![d3](/static/img/thm/dailybugle/d3.png)
 
 The scan came back with a version number! After looking through the info, there isn’t much else there that we didn’t already know. Let’s search for vulnerabilities in that version.
 
@@ -35,7 +35,7 @@ We see a few options. Let’s go with `42033`. This can be found [here][exdb]. T
 
 Let’s navigate to that URL and check on our server.
 
-![d4](/src/img/thm/dailybugle/d4.webp)
+![d4](/static/img/thm/dailybugle/d4.webp)
 
 If you see on the bottom, we get a SQL error from the DB server. This means it is vulnerable! Let’s use SQLMap to exploit this (syntax can be found in exploit information)!
 
@@ -49,7 +49,7 @@ Now that we have the various database names, let’s dump out the credentials. W
 sqlmap -u "http://<machine_ip>/index.php?option=com_fields&view=fields&layout=modal&list[fullordering]=updatexml" --risk=3 --level=5 --random-agent -D joomla -T '#__users' -C id,name,username,email,password,usertype,block,sendEmail,registerDate,lastvisitDate,activation,params --dump
 ```
 
-![d5](/src/img/thm/dailybugle/d5.webp)
+![d5](/static/img/thm/dailybugle/d5.webp)
 
 We have the hash! Let’s crack it with **John the Ripper**. Put the hash into a file. Then run `john` against a wordlist.
 
@@ -57,13 +57,13 @@ We have the hash! Let’s crack it with **John the Ripper**. Put the hash into a
 
 We cracked the password!
 
-![d6](/src/img/thm/dailybugle/d6.png)
+![d6](/static/img/thm/dailybugle/d6.png)
 
 Login to Joomla. Let’s see what our permissions are. Navigate to **Users** and you can see that we have **Super User** permissions. Let’s edit a template to give us a shell! Navigate to **Templates > Templates > Protostar Details and Files > index.php**
 
 Now add our reverse shell code (This can be found [here][php]):
 
-![d7](/src/img/thm/dailybugle/d7.png)
+![d7](/static/img/thm/dailybugle/d7.png)
 
 Save the template. Start a `netcat` listener on the port specified: `nc -lnvp 1234`
 
@@ -73,11 +73,11 @@ Let’s `ls /home` to find a username. Then navigate to `/var/www/html` so we ca
 
 Here we find the `configuration.php` file. We can gather credentials here:
 
-![d8](/src/img/thm/dailybugle/d8.png)
+![d8](/static/img/thm/dailybugle/d8.png)
 
 SSH into the box and find the user flag!
 
-![d9](/src/img/thm/dailybugle/d9.png)
+![d9](/static/img/thm/dailybugle/d9.png)
 
 Now we need to do some privilege escalation. We need to utilize `yum` for our privesc exploit. Let’s look at [GTFObins][gtfo]. Search for `yum`. Let’s use the 2nd option.
 
@@ -128,7 +128,7 @@ Now we can run: `whoami`. We are root!!!
 
 Let’s get the flag!
 
-![d10](/src/img/thm/dailybugle/d10.png)
+![d10](/static/img/thm/dailybugle/d10.png)
 
 # Review
 Wow! This was definitely a more difficult box than I’ve done so far on THM. It was such a fun challenge and I’m glad that it put up a fight! I learned some new tools like joomscan and utilized the tried and true PHP reverse shell. Overall, this was a great room to challenge yourself!
