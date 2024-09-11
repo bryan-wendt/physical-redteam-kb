@@ -96,7 +96,7 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Red Team Wiki',
+            title: 'Projects',
             items: [
               {
                 label: 'Red Team Wiki',
@@ -108,16 +108,12 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
                 label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                href: 'https://discord.com/users/bw#6573',
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: 'X',
+                href: 'https://x.com/bryan_wendt',
               },
             ],
           },
