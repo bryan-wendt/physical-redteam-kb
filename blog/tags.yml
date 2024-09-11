@@ -1,19 +1,128 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
+personal:
+  label: Personal
+  permalink: /personal
+  description: Personal posts about my interests outside of security
 
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
+certification:
+  label: Certification
+  permalink: /certification
+  description: Certification posts
 
-docusaurus:
-  label: Docusaurus
-  permalink: /docusaurus
-  description: Docusaurus tag description
+ejpt:
+  label: eJPT
+  permalink: /ejpt
+  description: eJPT posts
 
-hola:
-  label: Hola
-  permalink: /hola
-  description: Hola tag description
+elearnsecurity:
+  label: eLearnSecurity
+  permalink: /elearnsecurity
+  description: eLearnSecurity posts
+
+peh:
+  label: PEH
+  permalink: /peh
+  description: Practical Ethical Hacker course
+
+tcm:
+  label: TCM
+  permalink: /tcm
+  description: The Cyber Mentor
+
+thecybermentor:
+  label: The Cyber Mentor
+  permalink: /thecybermentor
+  description: The Cyber Mentor
+
+notes:
+  label: Notes
+  permalink: /notes
+  description: Notes
+
+notetaking:
+  label: Notetaking
+  permalink: /notetaking
+  description: Notetaking
+
+learning:
+  label: Learning
+  permalink: /learning
+  description: Learning topics
+
+picklerick:
+  label: PickleRick
+  permalink: /picklerick
+  description: PickleRick Room
+
+tryhackme:
+  label: TryHackMe
+  permalink: /tryhackme
+  description: TryHackMe
+
+walkthrough:
+  label: Walkthrough
+  permalink: /walkthrough
+  description: Walkthroughs
+steelmountain:
+  label: SteelMountain
+  permalink: /steelmountain
+  decription: SteelMountain Room
+
+ice:
+  label: Ice
+  permalink: /ice
+  description: Ice Room
+
+hackpark:
+  label: HackPark
+  permalink: /hackpark
+  description: HackPark Room
+
+aoc:
+  label: AoC
+  permalink: /aoc
+  description: AdventOfCyber
+
+advent-of-cyber:
+  label: AdventOfCyber
+  permalink: /advent-of-cyber
+  description: AdventOfCyber
+
+gamezone:
+  label: PGameZone
+  permalink: /gamezone
+  description: GameZone Room
+
+skynet:
+  label: Skynet
+  permalink: /skynet
+  description: Skynet Room
+
+daily-bugle:
+  label: DailyBugle
+  permalink: /daily-bugle
+  description: DailyBugle Room
+
+overpass-2:
+  label: Overpass2
+  permalink: /overpass-2
+  description: Overpass2 Room
+
+relevant:
+  label: Relevant
+  permalink: /relevant
+  description: Relevant Room
+
+internal:
+  label: Internal
+  permalink: /internal
+  description: Internal Room
+
+linux-strength-training:
+  label: LinuxStrengthTraining
+  permalink: /linux-strength-training
+  description: LinuxStrengthTraining Room
+
+updates:
+  label: Updates
+  permalink: /updates
+  description: Updates
