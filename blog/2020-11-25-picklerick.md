@@ -6,6 +6,7 @@ tags: [learning, picklerick, tryhackme, walkthrough]
 ---
 
 Since this is my first [TryHackMe (THM)][thm] write-up, I figured it would be good to start with a fun one! This is the [Pickle Rick][picklerick] room.
+<!-- truncate -->
 
 # Enumeration
 Since we don’t have any info at all other than “help Rick make his potion” we need to start enumerating.

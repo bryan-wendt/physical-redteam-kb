@@ -6,6 +6,7 @@ tags: [learning, steelmountain, tryhackme, walkthrough]
 ---
 
 This is a [TryHackMe][tryhackme] walkthrough for the room: [Steel Mountain][sm]. Deploy the machine and let’s get started!
+<!-- truncate -->
 
 # Enumeration
 Start with our friend, nmap: `nmap -T4 -A -p- 10.10.89.192`

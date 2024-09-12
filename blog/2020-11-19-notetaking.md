@@ -6,6 +6,7 @@ tags: [notes, notetaking]
 ---
 
 I know that my notetaking journey may not be as extensive as others, but here are my thoughts on how I ended up where I am today with my notes and why I may never be finished on this journey.
+<!-- truncate -->
 
 # .txt
 When I first started using computers, my needs were…not much. So every single thing I needed to keep track of I put in a text file. I started learning about computers on Windows, so naturally I would use the one-and-only Notepad. When I finally got around to learning *nix, I used whatever text file editor came preinstalled, or good ‘ol vi. This met my needs at the time and I ended up using .txt even into my first few IT jobs.

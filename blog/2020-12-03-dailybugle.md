@@ -6,6 +6,7 @@ tags: [learning, daily-bugle, tryhackme, walkthrough]
 ---
 
 This is a walkthrough for the [TryHackMe][thm] room: [Daily Bugle][daily-room]. Let’s get started!
+<!-- truncate -->
 
 # Deploy
 Let’s start off with scanning the box! `nmap -sC -sV -oN nmap.txt <machine_ip>`

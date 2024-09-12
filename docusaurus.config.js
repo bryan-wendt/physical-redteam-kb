@@ -75,7 +75,7 @@ const config = {
         title: 'Bryan Wendt',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.png',
+          src: '/img/logo.png',
         },
         items: [
           {
