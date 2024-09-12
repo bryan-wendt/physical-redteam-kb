@@ -3,9 +3,7 @@ bw:
   title: Security Enthusiast
   url: https://bryan-wendt.com
   image_url: /static/img/logo.png
-  page:
-    # customize the url of the author page at /blog/authors/<permalink>
-    permalink: '/all-bryan-wendt-articles'
+  page: true
   socials:
     x: bryan_wendt
     linkedin: bryan-wendt

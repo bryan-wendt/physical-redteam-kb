@@ -52,6 +52,8 @@ const config = {
             type: ['rss', 'atom'],
             xslt: true,
           },
+          blogSidebarTitle: 'All posts',
+          blogSidebarCount: 'ALL',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           // Useful options to enforce blogging best practices
@@ -69,8 +71,6 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
-      image: 'img/logo.png',
       navbar: {
         title: 'Bryan Wendt',
         logo: {
