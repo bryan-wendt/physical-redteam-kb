@@ -2,7 +2,7 @@ bw:
   name: Bryan Wendt
   title: Security Enthusiast
   url: https://bryan-wendt.com
-  image_url: /static/img/logo.png
+  image_url: img/logo.png
   page: true
   socials:
     x: bryan_wendt
