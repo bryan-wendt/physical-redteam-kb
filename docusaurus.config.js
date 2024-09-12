@@ -75,12 +75,12 @@ const config = {
         title: 'Bryan Wendt',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/favicon.png',
+          src: 'img/logo_new.png',
         },
         items: [
           {
             type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            sidebarId: 'docsSidebar',
             position: 'left',
             label: 'Red Team Wiki',
           },
