@@ -4,7 +4,7 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Red Team Wiki',
+    title: 'Physical Red Team Wiki',
     titleLink: '/docs/intro',
     imageLink: '/img/red_team.png',
     description: (
@@ -44,7 +44,7 @@ function Feature({title, description, imageLink, titleLink}) {
 export default function HomepageFeatures() {
   return (
     <section className={styles.features}>
-      <div className="container">
+      <div className="container text--center">
       <Heading as="h1">Site is a work in progress</Heading>
         <div className="row">
           {FeatureList.map((props, idx) => (

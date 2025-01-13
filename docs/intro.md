@@ -10,7 +10,7 @@ This wiki is designed to combine knowledge of various Physical Red Team knowledg
 
 Currently managed by myself, Bryan Wendt.
 
-### Why
+## Why
 
 I realized there is not one location for physical red-team knowledge. It is scattered throughout various blogs, youtube channels, and conference talks.
 
