@@ -44,8 +44,8 @@ function Feature({title, description, imageLink, titleLink}) {
 export default function HomepageFeatures() {
   return (
     <section className={styles.features}>
-      <Heading as="h1">Site is a work in progress</Heading>
       <div className="container">
+      <Heading as="h1">Site is a work in progress</Heading>
         <div className="row">
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
