@@ -79,7 +79,7 @@ const config = {
         },
         items: [
           {
-            type: 'docSidebar',
+            type: 'docsSidebar',
             sidebarId: 'docsSidebar',
             position: 'left',
             label: 'Red Team Wiki',
