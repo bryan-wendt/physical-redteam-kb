@@ -80,8 +80,7 @@ const config = {
         },
         items: [
           {
-            type: 'doc',
-            sidebarId: 'docsSidebar',
+            to: '/docs',
             position: 'left',
             label: 'Red Team Wiki',
           },
