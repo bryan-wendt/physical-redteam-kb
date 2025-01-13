@@ -44,8 +44,6 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
         },
         blog: {
           showReadingTime: true,
@@ -80,7 +78,7 @@ const config = {
         },
         items: [
           {
-            to: '/docs',
+            to: '/docs/intro',
             position: 'left',
             label: 'Red Team Wiki',
           },
