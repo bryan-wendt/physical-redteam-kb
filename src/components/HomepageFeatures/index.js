@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'Red Team Wiki',
-    Svg: require('/static/img/red_team.png').default,
+    <img src='../static/img/red_team.png' />,
     description: (
       <>
         Physical Red Team Wiki that covers a large 
@@ -15,8 +15,8 @@ const FeatureList = [
   },
   {
     title: 'Blog',
-    Svg: require('/static/img/blog_new.png').default,
     description: (
+      <img src='../static/img/blog_new.png' />,
       <>
         Blog covers a wide range of topics regarding security, certifications,
         training, and personal endeavors.
