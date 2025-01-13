@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'Red Team Wiki',
-    Svg: require('/static/img/docusaurus.svg').default,
+    Svg: require('/static/img/docusaurus.png').default,
     description: (
       <>
         Physical Red Team Wiki that covers a large 
@@ -15,7 +15,7 @@ const FeatureList = [
   },
   {
     title: 'Blog',
-    Svg: require('/static/img/blog.svg').default,
+    Svg: require('/static/img/blog.png').default,
     description: (
       <>
         Blog covers a wide range of topics regarding security, certifications,
@@ -27,7 +27,7 @@ const FeatureList = [
 
 function Feature({Svg, title, description}) {
   return (
-    <div className={clsx('col col--3')}>
+    <div className={clsx('col col--2')}>
       <div className="text--center">
         <Svg className={styles.featureSvg} role="img" />
       </div>
