@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'Red Team Wiki',
-    imageLink: '@site/static/img/red_team.png',
+    imageLink: '/img/red_team.png',
     description: (
       <>
         Physical Red Team Wiki that covers a large 
@@ -15,7 +15,7 @@ const FeatureList = [
   },
   {
     title: 'Blog',
-    imageLink: '@site/static/img/blog_new.png',
+    imageLink: '/img/blog_new.png',
     description: (
       <>
         Blog covers a wide range of topics regarding security, certifications,
