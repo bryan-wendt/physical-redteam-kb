@@ -1,0 +1,8 @@
+{
+  "label": "Obstacles",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Obstacles you may run into during physical red team engagements."
+  }
+}

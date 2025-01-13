@@ -80,7 +80,7 @@ const config = {
           {
             to: '/docs/intro',
             position: 'left',
-            label: 'Red Team Wiki',
+            label: 'Physical Red Team Wiki',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
@@ -97,7 +97,7 @@ const config = {
             title: 'Projects',
             items: [
               {
-                label: 'Red Team Wiki',
+                label: 'Physical Red Team Wiki',
                 to: '/docs/intro',
               },
             ],
