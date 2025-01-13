@@ -5,6 +5,7 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'Red Team Wiki',
+    titleLink: '/docs/intro',
     imageLink: '/img/red_team.png',
     description: (
       <>
@@ -15,6 +16,7 @@ const FeatureList = [
   },
   {
     title: 'Blog',
+    titleLink: '/blog',
     imageLink: '/img/blog_new.png',
     description: (
       <>
@@ -25,14 +27,14 @@ const FeatureList = [
   }
 ];
 
-function Feature({Svg, title, description, imageLink}) {
+function Feature({title, description, imageLink, titleLink}) {
   return (
-    <div className={clsx('col col--2')}>
+    <div className={clsx('col col--3')}>
       <div className="text--center">
         <img src={imageLink} />
       </div>
       <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
+        <Heading as="h3"><a href={titleLink}>{title}</a></Heading>
         <p>{description}</p>
       </div>
     </div>
